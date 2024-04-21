@@ -15,7 +15,7 @@ public class Calculadora {
 	// divisao
 	public double divisao(double a, double b) {
 		if(b == 0) {
-			throw new IllegalArgumentException("Divisao por zero nao e permitida");
+		System.out.println("Divisao por zero nao e permitida");
 		}
 		return a / b;
 		
