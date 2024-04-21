@@ -73,5 +73,17 @@ class CalculadoraTeste {
 		 //O teste espera que uma execao ArithmeticException seja lancada
 		 
 	}
+	
+	@Test
+	public void SomaNegativo() {
+		Calculadora calculadora = new Calculadora();
+		double a = -5;
+		double b = -7;
+		
+		double resultadoEsperado = -12;
+		double resultadoReal = calculadora.soma(a,b);
+		
+		assertEquals(resultadoEsperado, resultadoReal,0.001);
+	}
 
 }
