@@ -62,28 +62,29 @@ class CalculadoraTeste {
 		// Comparacao dos resultados
 		assertEquals(resultadoEsperado, resultadoReal, 0.001);
 	}
-	
+
 	@Test
 	public void DivisaoPorZero() {
 		Calculadora calculadora = new Calculadora();
-		 double a = 10;
-		 double b = 0;
-		 
-		 calculadora.divisao(a, b);
-		 //O teste espera que uma execao ArithmeticException seja lancada
-		 
+		double a = 10;
+		double b = 0;
+
+		calculadora.divisao(a, b);
+		// O teste espera que uma execao ArithmeticException seja lancada
 	}
-	
+
+	// Soma com numeros negativos
 	@Test
 	public void SomaNegativo() {
 		Calculadora calculadora = new Calculadora();
 		double a = -5;
 		double b = -7;
-		
-		double resultadoEsperado = -12;
-		double resultadoReal = calculadora.soma(a,b);
-		
-		assertEquals(resultadoEsperado, resultadoReal,0.001);
+
+		double resultadoEsperado = -12;// resultado esperado do metodo
+		double resultadoReal = calculadora.soma(a, b);
+
+		// Comparacao dos resultados
+		assertEquals(resultadoEsperado, resultadoReal, 0.001);
 	}
 
 }
